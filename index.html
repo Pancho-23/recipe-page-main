@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Recipe page</title>
 
@@ -15,45 +15,47 @@
 
     @font-face {
       font-family: 'young-serif';
-      src: url('/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+      src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf');
     }
 
     @font-face {
       font-family: 'Outfit-Black';
-      src: url('/recipe-page-main/assets/fonts/outfit/static/Outfit-Black.ttf');
+      src: url('/assets/fonts/outfit/static/Outfit-Black.ttf');
     }
     @font-face {
       font-family: 'Outfit-Bold';
-      src: url('/recipe-page-main/assets/fonts/outfit/static/Outfit-Bold.ttf');
+      src: url('/assets/fonts/outfit/static/Outfit-Bold.ttf');
     }
     @font-face {
       font-family: 'Outfit-ExtraBold';
-      src: url('/recipe-page-main/assets/fonts/outfit/static/Outfit-ExtraBold.ttf');
+      src: url('/assets/fonts/outfit/static/Outfit-ExtraBold.ttf');
     }
     @font-face {
       font-family: 'Outfit-Light';
-      src: url('/recipe-page-main/assets/fonts/outfit/static/Outfit-Light.ttf');
+      src: url('/assets/fonts/outfit/static/Outfit-Light.ttf');
     }
     @font-face {
       font-family: 'Outfit-Medium';
-      src: url('/recipe-page-main/assets/fonts/outfit/static/Outfit-Medium.ttf');
+      src: url('/assets/fonts/outfit/static/Outfit-Medium.ttf');
     }
     @font-face {
       font-family: 'Outfit-Regular';
-      src: url('/recipe-page-main/assets/fonts/outfit/static/Outfit-Regular.ttf');
+      src: url('/assets/fonts/outfit/static/Outfit-Regular.ttf');
     }
     @font-face {
       font-family: 'Outfit-SemiBold';
-      src: url('/recipe-page-main/assets/fonts/outfit/static/Outfit-SemiBold.ttf');
+      src: url('/assets/fonts/outfit/static/Outfit-SemiBold.ttf');
     }
     @font-face {
       font-family: 'Outfit-Thin';
-      src: url('/recipe-page-main/assets/fonts/outfit/static/Outfit-Thin.ttf');
+      src: url('/assets/fonts/outfit/static/Outfit-Thin.ttf');
     }
 
     body {
       background-color: rgb(243,229,216);
       font-size: 15px;
+      font-family: 'Outfit-Medium';
+      color: rgb(121,117,114);
     }
 
   
@@ -89,8 +91,46 @@
       display: block;
       object-fit: cover;
       
-
     }
+
+
+
+    .value-item, li.items-list::marker {
+      color: rgb(124, 68, 51);
+      font-family: 'Outfit-Bold';
+    }
+
+    .item, .value-item {
+      display: inline-block;
+    }
+
+    span {
+      font-family: 'Outfit-Bold';
+      color: rgb(91,88,83);
+    }
+
+    div, p, ul, li {
+      margin: 10px;
+    }
+
+    div {
+      padding: 10px;
+    }
+
+    .subtitle-purple {
+      color: rgb(129,45,79);
+      font-size: 17px;
+      font-family: 'Outfit-SemiBold';
+    }
+
+    .preparation-time {
+      background-color: rgb(255,247,252);
+    }
+
+    span {
+      margin-left: 30px;
+    }
+    
 
 
 
@@ -100,7 +140,7 @@
 
   <div class="container">
     <div class="image-div">
-      <img src="/recipe-page-main/assets/images/image-omelette.jpeg" alt="Omelette">
+      <img src="/assets/images/image-omelette.jpeg" alt="Omelette">
     </div>
   <div class="recipe">
     <div class="title">Simple Omelette Recipe</div>
@@ -116,11 +156,11 @@
     </div>
     <div class="subtitle">Ingredients</div>
     <ul>
-      <li class="items-list">2-3 large eggs</li>
-      <li class="items-list">Salt, to taste</li>
-      <li class="items-list">Pepper, to taste</li>
-      <li class="items-list">1 tablespoon of butter or oil</li>
-      <li class="items-list">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      <li class="items-list"><span>2-3 large eggs</span></li>
+      <li class="items-list"><span>Salt, to taste</span></li>
+      <li class="items-list"><span>Pepper, to taste</span></li>
+      <li class="items-list"><span>1 tablespoon of butter or oil</span></li>
+      <li class="items-list"><span>Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
     </ul>
   </div>
   <hr>
