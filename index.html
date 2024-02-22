@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Recipe page</title>
 
@@ -15,40 +15,40 @@
 
     @font-face {
       font-family: 'young-serif';
-      src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf');
+      src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
     }
 
     @font-face {
       font-family: 'Outfit-Black';
-      src: url('/assets/fonts/outfit/static/Outfit-Black.ttf');
+      src: url('./assets/fonts/outfit/static/Outfit-Black.ttf');
     }
     @font-face {
       font-family: 'Outfit-Bold';
-      src: url('/assets/fonts/outfit/static/Outfit-Bold.ttf');
+      src: url('./assets/fonts/outfit/static/Outfit-Bold.ttf');
     }
     @font-face {
       font-family: 'Outfit-ExtraBold';
-      src: url('/assets/fonts/outfit/static/Outfit-ExtraBold.ttf');
+      src: url('./assets/fonts/outfit/static/Outfit-ExtraBold.ttf');
     }
     @font-face {
       font-family: 'Outfit-Light';
-      src: url('/assets/fonts/outfit/static/Outfit-Light.ttf');
+      src: url('./assets/fonts/outfit/static/Outfit-Light.ttf');
     }
     @font-face {
       font-family: 'Outfit-Medium';
-      src: url('/assets/fonts/outfit/static/Outfit-Medium.ttf');
+      src: url('./assets/fonts/outfit/static/Outfit-Medium.ttf');
     }
     @font-face {
       font-family: 'Outfit-Regular';
-      src: url('/assets/fonts/outfit/static/Outfit-Regular.ttf');
+      src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf');
     }
     @font-face {
       font-family: 'Outfit-SemiBold';
-      src: url('/assets/fonts/outfit/static/Outfit-SemiBold.ttf');
+      src: url('./assets/fonts/outfit/static/Outfit-SemiBold.ttf');
     }
     @font-face {
       font-family: 'Outfit-Thin';
-      src: url('/assets/fonts/outfit/static/Outfit-Thin.ttf');
+      src: url('./assets/fonts/outfit/static/Outfit-Thin.ttf');
     }
 
     body {
@@ -180,6 +180,37 @@
       object-fit: contain;
     }
 
+    @media (max-width: 767px) {
+
+      body, html {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+      }
+      
+      .container {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      .image-div {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      img {
+        padding: 0;
+        margin: 0;
+      }
+
+
+
+    }
+
 
   </style>
 </head>
@@ -187,7 +218,7 @@
 
   <div class="container">
     <div class="image-div">
-      <img src="/assets/images/image-omelette.jpeg" alt="Omelette">
+      <img src="./assets/images/image-omelette.jpeg" alt="Omelette">
     </div>
   <div class="recipe">
     <div class="title">Simple Omelette Recipe</div>
